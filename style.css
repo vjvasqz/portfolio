@@ -1,0 +1,257 @@
+/* this is the whole screen */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Kaisei Tokuminl; /*Georgia, 'Times New Roman', serif;*/
+}
+.header {
+  height: 100vh;
+  width: 100%;
+  padding: 0 8%;
+  background: #F1E5D3;
+  position: center;
+  color: #000000;
+}
+.header h1{
+  font-size:28px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-links{
+  padding: 28px 0;
+}
+.nav-links li{
+  display: inline-block;
+  margin: 0 15px;
+}
+.nav-links li a{
+  text-decoration: none;
+  color:#000000;;
+  padding: 5px 0;
+}
+.nav-links li::after{
+  content:'';
+  width: 0%;
+  height: 2px;
+  background: #000000;;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links li:hover::after{
+  width: 100%;
+}
+/* this is the center text navigation bar */
+/* "width: 623px; 
+left: 663px; 
+top: 288px;
+position: absolute; 
+color: black; 
+font-size: 30px; 
+font-family: Kaisei Tokumin; 
+font-weight: 700; 
+word-wrap: break-word */
+.content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 90%;
+  /* max-width: 900px; */
+  transform: translate(-50%, -50%);
+  text-align:left;
+  color:#000000;
+  
+}
+ .content img{
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+
+/* ---------------PROJECTS W/O box around------------------------ */
+/* .row{
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.projects{
+  height: 100vh;
+  width: 100%;
+  padding: 0 8%;
+  background: #F9F3D7;
+  position: relative;
+  
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  color:#642F22;
+}
+.projects h1{
+  font-size: 28px;
+  font-weight: 600;
+  color:#642F22;
+}
+.projects-col{
+  flex-basis: 29%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+.projects-col img{
+  width: 100%;
+  border-radius: 10px;
+}
+.projects-col p{
+  padding: 0;
+  font-size:19px;
+
+}
+.projects-col h2{
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}  */
+/* PROJECT STACK UP WHEN PAGE SHRINK */
+@media(max-width: 700px){
+  .row{
+    flex-direction: column;
+  }
+} 
+/* ----------------------------Footer----------------------------- */
+.footer_row{
+  margin: 1%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer{
+  height: 25vh;
+  width: 100%;
+  padding: 0 8%;
+  background: #642F22;
+  position: relative;
+  text-align: left;
+  padding: 30px;
+  font-size:18px;
+  color:#F9F3D7
+
+}
+.footer h3{
+  position: center;
+}
+
+.footer p{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size:20px;
+
+}
+
+.outside_links{
+  padding: 28px 0;
+  text-align: center;
+  font-size:20px;
+}
+
+.outside_links li{
+  display: inline-block;
+  margin: 0 15px;
+}
+.outside_links li a{
+  text-decoration: none;
+  color:#F9F3D7;;
+  padding: 5px 0;
+}
+.outside_links li::after{
+  content:'';
+  width: 0%;
+  height: 2px;
+  background: #F9F3D7;;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.outside_links li:hover::after{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---This code works and can be replace by PROJECTS W/O box around--- */
+/* ----------------PROJECT BOX----------------- */
+.projects{
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  padding-top: 100px;
+  color: #F9F3D7;
+  
+}
+.projects h1{
+  font-size: 28px;
+  font-weight: 600;
+  color:#804531;
+
+}
+.row{
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.projects-col{
+  background: #804531;
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.projects-col img{
+  width: 100%;
+  border-radius: 10px;
+}
+.projects-col h2{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #F9F3D7;
+}
+.projects-col p{
+  color: #F9F3D7;
+}
+.projects-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+

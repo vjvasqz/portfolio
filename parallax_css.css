@@ -1,0 +1,50 @@
+
+
+
+
+.content{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 100px;
+    color: #F9F3D7;
+    
+  }
+  .content h1{
+    font-size: 28px;
+    font-weight: 600;
+    color:#804531;
+  
+  }
+  .row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .projects-col{
+    background: #804531;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+  .projects-col img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .projects-col h2{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #F9F3D7;
+  }
+  .projects-col p{
+    color: #F9F3D7;
+  }
+  .projects-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+  }
+  
+  
